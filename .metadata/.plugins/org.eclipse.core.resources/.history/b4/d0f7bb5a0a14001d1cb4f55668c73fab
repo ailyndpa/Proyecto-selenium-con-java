@@ -1,0 +1,15 @@
+
+public class JavaIntroduction {
+	
+	public static void main(String[] args) {
+		//Para declarar un arreglo en este caso es de entero para un espacio en memoria de 5 valores
+		int [] array= new int[5];
+		//Asignando valores
+		array[0]=0;
+		array[1]=1;
+		array[2]=2;
+		array[3]=3;
+		array[4]=4;
+		System.out.println(array[3]);
+	}
+}

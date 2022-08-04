@@ -1,0 +1,7 @@
+package Java;
+
+public class Java2 {
+	 public String Nombre() {
+		 return "Ailyn del Pino!!!";
+	 }
+}

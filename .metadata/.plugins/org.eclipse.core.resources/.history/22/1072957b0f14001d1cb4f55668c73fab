@@ -1,0 +1,27 @@
+
+public class JavaIntroduction {
+	
+	public static void main(String[] args) {
+		//Para declarar un arreglo en este caso es de entero para un espacio en memoria de 5 valores
+		String [] array= new String[5];
+		//Asignando valores
+		array[0]="zero";
+		array[1]="one";
+		array[2]="two";
+		array[3]="three";
+		array[4]="four";
+		System.out.println("El arreglo array en la posición 0 tiene como valor: "+array[0]);
+		
+		//Otra manera de crear y asignar valores a un array
+		String [] array2= {"five", "six","seven", "eight", "nine", "ten"};
+		System.out.println("El arreglo array2 en la posición 3 tiene como valor: "+array2[3]);
+		
+		//loop 
+		System.out.println("Este es el tamaño del arreglo array: "+array.length);
+		for(int i=0; i<array.length;i++) {
+			System.out.println(array[i]);
+		}
+		//otra manera con menos complicación
+		
+	}
+}

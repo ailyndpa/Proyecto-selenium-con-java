@@ -1,0 +1,31 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SeleniumIntrocution {
+
+	public static void main(String[] args) {
+		//Para ejecutar las pruebas con navegador chrome
+			//System.setProperty("webdriver.chrome.driver", "D:/NO BORRAR LILY/PROBADOR/Cursos/Selenium con java/CURSO PAGADO POR JORGE/Chromedriver v104/chromedriver.exe");
+			//WebDriver driver= new ChromeDriver();
+		//Para ejecutar las pruebas con firefox
+			//System.setProperty("webdriver.gecko.driver", "D:/NO BORRAR LILY/PROBADOR/Cursos/Selenium con java/CURSO PAGADO POR JORGE/geckodriver/geckodriver.exe");
+			//WebDriver driver= new FirefoxDriver();
+		//Para ejecutar las pruebas con Edge
+			System.setProperty("webdriver.edge.driver", "D:/NO BORRAR LILY/PROBADOR/Cursos/Selenium con java/CURSO PAGADO POR JORGE/geckodriver/geckodriver.exe");
+			WebDriver driver= new EdgeDriver();	
+		
+			//CODIGO COMÚN		
+		driver.get("https://rahulshettyacademy.com/");
+		String titulo=driver.getTitle();
+		String url=driver.getCurrentUrl();
+		System.out.println(titulo);
+		System.out.println(url);
+		driver.quit();
+		//String errorMessageFormat= "El titulo no es 'Rahul Shetty Academy'";
+		//Assert.isTrue(true, errorMessageFormat, titulo=="Rahul Shetty Academy");
+		
+	}
+
+}
